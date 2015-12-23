@@ -19,22 +19,22 @@ header{
     clear:both;
 }
 .left-footer{
+	display: inline-block;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     background-color: purple;
     horiz-align:center;
-    float:left;
     width: 48%;
-    margin: 10px 10px;
+	margin: auto;
 }
 .right-footer{
+	display: inline-block;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     background-color: blue;
     horiz-align:center;
-    float:right;
-    width: 48%;
-    margin: 10px 10px;
+	width: 48%;
+	margin: auto;
 }
 footer{
     width: 80%;

@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <title>CSS Layout Practise</title>
     <link href="reset.css" rel="stylesheet" type="text/css">
-    <link href="Task1.css" rel="stylesheet" type="text/css">
-    <!--<link href="Task2.css" rel="stylesheet" type="text/css">-->
-    <!--<link href="Task3.css" rel="stylesheet" type="text/css">-->
-    <!--<link href="Task4.css" rel="stylesheet" type="text/css">-->
+    <link href="Task1.css" tytle="Task1" rel="stylesheet" type="text/css">
+    <link href="Task2.css" tytle="Task1" rel="stylesheet" type="text/css">
+    <link href="Task3.css" tytle="Task1" rel="stylesheet" type="text/css">
+    <link href="Task4.css" tytle="Task1" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <header>This is the header</header>
+    <header>
+		<form>
+			<input type="submit" onclick="switch_style('blue');return false;" name="theme" value="Blue Theme" id="blue">
+			<input type="submit" onclick="switch_style('pink');return false;" name="theme" value="Pink Theme" id="pink">
+		</form>
+	</header>
     <main class="center">
         <article><span>This is the main content</span></article>
     </main>
