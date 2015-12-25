@@ -3,24 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <title>CSS Layout Practise</title>
-    <link href="reset.css" rel="stylesheet" type="text/css">
-    <link href="Task1.css" tytle="Task1" rel="stylesheet" type="text/css">
-    <link href="Task2.css" tytle="Task1" rel="stylesheet" type="text/css">
-    <link href="Task3.css" tytle="Task1" rel="stylesheet" type="text/css">
-    <link href="Task4.css" tytle="Task1" rel="stylesheet" type="text/css">
+    <script src="switch-between-styles.js"></script>
+    <link href="Task1.css" title="Task1" rel="stylesheet" type="text/css">
+    <link href="Task2.css" title="Task2" rel="alternate stylesheet" type="text/css">
+    <link href="Task3.css" title="Task3" rel="alternate stylesheet" type="text/css">
+    <link href="Task4.css" title="Task4" rel="alternate stylesheet" type="text/css">
 </head>
 <body>
     <header>
 		<form>
-			<input type="submit" onclick="switch_style('blue');return false;" name="theme" value="Blue Theme" id="blue">
-			<input type="submit" onclick="switch_style('pink');return false;" name="theme" value="Pink Theme" id="pink">
+			<input type="submit" onclick="switch_style('Task1');return false;" name="theme" value="Task 1" id="task1">
+			<input type="submit" onclick="switch_style('Task2');return false;" name="theme" value="Task 2" id="task2">
+            <input type="submit" onclick="switch_style('Task3');return false;" name="theme" value="Task 3" id="task3">
+            <input type="submit" onclick="switch_style('Task4');return false;" name="theme" value="Task 4" id="task4">
 		</form>
 	</header>
-    <main class="center">
-        <article><span>This is the main content</span></article>
+    <main>
+        <article>This is the main content</article>
+        <aside class="left">Left Aside</aside>
+        <aside class="right">Right Aside</aside>
     </main>
-        <aside class="left">This is the left-outer content</aside>
-        <aside class="right">This is the right-outer content</aside>
     <footer>
         <section class="footer">This is the footer</section>
         <section class="right-footer">This is the right footer</section>
